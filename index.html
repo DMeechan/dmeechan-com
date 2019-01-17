@@ -1,70 +1,373 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Daniel Meechan</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Meechan</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/dist/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/dist/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dist/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/dist/images/safari-pinned-tab.svg" color="#603cba">
+    <link rel="shortcut icon" href="/dist/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-large-bg"><span></span></div>
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>Meechan</title>
+                                    <defs>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="logo-b">
+                                            <stop stop-color="#A8A3F6" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="100%"/>
+                                        </linearGradient>
+                                        <path d="M27.098 7.53l-9.441 9.44a8.084 8.084 0 0 0-.625.702 8 8 0 0 0 12.173 10.377l9.24-9.24A16.02 16.02 0 0 1 39 23c0 8.837-7.163 16-16 16S7 31.837 7 23 14.163 7 23 7c1.416 0 2.79.184 4.098.53z" id="logo-a"/>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="logo-d">
+                                            <stop stop-color="#DAD8FF" offset="0%"/>
+                                            <stop stop-color="#857DF3" offset="100%"/>
+                                        </linearGradient>
+                                        <path d="M27.098 7.53l-9.441 9.44a8.084 8.084 0 0 0-.625.702 8 8 0 0 0 12.173 10.377l9.24-9.24A16.02 16.02 0 0 1 39 23c0 8.837-7.163 16-16 16S7 31.837 7 23 14.163 7 23 7c1.416 0 2.79.184 4.098.53z" id="logo-c"/>
+                                    </defs>
+                                    <g transform="translate(-7 -7)" fill="none" fill-rule="evenodd">
+                                        <use fill="url(#logo-b)" transform="rotate(45 23 23)" xlink:href="#logo-a"/>
+                                        <use fill="url(#logo-d)" transform="scale(-1 1) rotate(45 0 -32.527)" xlink:href="#logo-c"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<body class="loading">
-  <div id="wrapper">
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    <div id="main">
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <div class="container-sm">
+                                <h1 class="hero-title h2-mobile mt-0 is-revealing">Hi, I'm Daniel!</h1>
+                                <p class="hero-paragraph is-revealing">
+                                    I <b>find problems</b>, <b>create solutions</b>, and then <b>teach</b> what I’ve learnt.
+                                </p>
+                                <p class="hero-paragraph is-revealing">
+                                    While at IBM I <b>created a DevOps training course for thousands of IBMers</b>, taught Learn to Code sessions, and built web apps with Vue & Node.
+                                </p>
+                                <p class="hero-paragraph">
+                                    Now I’m <b>building scalable, fault-tolerant web apps</b> with Elixir & GraphQL.
+                                </p>
+                                <p class="hero-paragraph">
+                                    <i>(when I'm not doing Brazilian Jiu Jitsu, that is)</i>
+                                </p>
+                                <div class="control">
+                                    <a class="button button-primary button-block button-shadow"
+                                        target="_blank"
+                                        href="mailto:daniel@meechan.co?subject=Let's talk&body=Hi Daniel,">
+                                        Let's talk
+                                    </a>
+                                </div>
 
-      <!-- Header -->
-      <header id="header">
-        <h1>Daniel Meechan</h1>
-        <p>
-          Software Developer - Java, JavaScript (ES6), Swift, Python
-        </p>
-        <p>
-          YouTube Certified Audience Growth Consultant
-        </p>
-        <p>
-          Brazilian Jiu Jitsu & Salsa dancing
-        </p>
+                                <!-- <div class="hero-form newsletter-form field field-grouped is-revealing">
+                                    <div class="control control-expanded">
+                                        <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+                                    </div>
+                                    <div class="control">
+                                        <a class="button button-primary button-block button-shadow" href="#">Get early access</a>
+                                    </div>
+                                </div> -->
+                                
+                            </div>
+                        </div>
+                        <div class="hero-illustration">
+                            <div class="hero-squares hero-squares-1 is-revealing">
+                                <svg width="124" height="64" viewBox="0 0 124 64" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient x1="0%" y1="50%" x2="114.418%" y2="50%" id="squares-1-a">
+                                            <stop stop-color="#6EFACC" offset="0%"/>
+                                            <stop stop-color="#6EFACC" stop-opacity="0" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0 0h4v4H0V0zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zM12 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM24 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM36 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM48 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM60 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM72 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM84 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM96 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4z" fill="url(#squares-1-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="hero-squares hero-squares-2 is-revealing">
+                                <svg width="64" height="88" viewBox="0 0 64 88" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient x1="0%" y1="50%" x2="114.418%" y2="50%" id="squares-2-a">
+                                            <stop stop-color="#6EFACC" offset="0%"/>
+                                            <stop stop-color="#6EFACC" stop-opacity="0" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M80 574h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm12-60h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4z" transform="rotate(90 359 279)" fill="url(#squares-2-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="hero-ball hero-ball-1 is-revealing">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient cx="56.15%" cy="27.43%" fx="56.15%" fy="27.43%" r="57.526%" gradientTransform="matrix(.5626 -.82673 .8022 .54591 .026 .589)" id="ball-1-a">
+                                            <stop stop-color="#F8F7FF" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="34.827%"/>
+                                            <stop stop-color="#9B95F3" offset="100%"/>
+                                        </radialGradient>
+                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-ball-1">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                            <feColorMatrix values="0 0 0 0 0.10 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.22 0" in="shadowBlurOuter"/>
+                                        </filter>
+                                    </defs>
+                                    <circle cx="200" cy="200" r="200" fill="#FFF" fill-rule="evenodd" style="filter:url(#dropshadow-ball-1)"/>
+                                    <circle cx="200" cy="200" r="200" fill="url(#ball-1-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="hero-ball hero-ball-2 is-revealing">
+                                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient cx="56.15%" cy="27.43%" fx="56.15%" fy="27.43%" r="57.526%" gradientTransform="matrix(.5626 -.82673 .8022 .54591 .026 .589)" id="ball-2-a">
+                                            <stop stop-color="#F8F7FF" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="34.827%"/>
+                                            <stop stop-color="#9B95F3" offset="100%"/>
+                                        </radialGradient>
+                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-ball-2">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                            <feColorMatrix values="0 0 0 0 0.10 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.22 0" in="shadowBlurOuter"/>
+                                        </filter>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="100" fill="#FFF" fill-rule="evenodd" style="filter:url(#dropshadow-ball-2)"/>
+                                    <circle cx="100" cy="100" r="100" fill="url(#ball-2-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="hero-illustration-browser is-revealing">
+                                <svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="browser-a">
+                                            <stop stop-color="#F89595" offset="0%"/>
+                                            <stop stop-color="#EF5C5C" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="browser-b">
+                                            <stop stop-color="#FFDFB0" offset="0%"/>
+                                            <stop stop-color="#FFBB78" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="browser-c">
+                                            <stop stop-color="#83E78D" offset="0%"/>
+                                            <stop stop-color="#4BCA55" offset="100%"/>
+                                        </linearGradient>
+                                        <filter x="-30%" y="-42.9%" width="184%" height="220%" filterUnits="objectBoundingBox" id="browser-d">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+                                            <feColorMatrix values="0 0 0 0 0.866666667 0 0 0 0 0.905882353 0 0 0 0 0.937254902 0 0 0 0.56 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+                                            <feMerge>
+                                                <feMergeNode in="shadowMatrixOuter1"/>
+                                                <feMergeNode in="SourceGraphic"/>
+                                            </feMerge>
+                                        </filter>
+                                        <linearGradient x1="19.946%" y1="72.147%" x2="73.772%" y2="18.374%" id="browser-e">
+                                            <stop stop-color="#F8F7FF" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="browser-f">
+                                            <stop stop-color="#DAD8FF" offset="0%"/>
+                                            <stop stop-color="#857DF3" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="browser-g">
+                                            <stop stop-color="#DAD8FF" offset="0%"/>
+                                            <stop stop-color="#CDCAFF" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="94.808%" y1="-15.701%" x2="6.924%" y2="82.567%" id="browser-h">
+                                            <stop stop-color="#5DFBD7" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#5DFBD7" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="1.733%" y1="-10.509%" y2="77.375%" id="browser-i">
+                                            <stop stop-color="#6EFACC" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#6EFACC" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="92.458%" y1="5.866%" x2="0%" y2="100%" id="browser-j">
+                                            <stop stop-color="#5DFBD7" offset="0%"/>
+                                            <stop stop-color="#5DFBD7" stop-opacity="0" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="92.458%" y1="5.866%" x2="0%" y2="100%" id="browser-k">
+                                            <stop stop-color="#5DFBD7" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#5DFBD7" stop-opacity=".513" offset="48.724%"/>
+                                            <stop stop-color="#5DFBD7" stop-opacity="0" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="92.458%" y1="5.866%" x2="0%" y2="100%" id="browser-l">
+                                            <stop stop-color="#5DFBD7" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#5DFBD7" stop-opacity=".513" offset="47.494%"/>
+                                            <stop stop-color="#5DFBD7" stop-opacity="0" offset="100%"/>
+                                        </linearGradient>
+                                        <filter x="-23.1%" y="-21.8%" width="192.3%" height="187.3%" filterUnits="objectBoundingBox" id="browser-m">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                                            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+                                            <feColorMatrix values="0 0 0 0 0.866666667 0 0 0 0 0.905882353 0 0 0 0 0.937254902 0 0 0 0.56 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+                                            <feMerge>
+                                                <feMergeNode in="shadowMatrixOuter1"/>
+                                                <feMergeNode in="SourceGraphic"/>
+                                            </feMerge>
+                                        </filter>
+                                        <linearGradient x1="100%" y1="50%" x2="-57.904%" y2="50%" id="browser-n">
+                                            <stop stop-color="#DAD8FF" offset="0%"/>
+                                            <stop stop-color="#857DF3" offset="100%"/>
+                                        </linearGradient>
+                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-1">
+                                            <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                            <feColorMatrix values="0 0 0 0 0.10 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.22 0" in="shadowBlurOuter"/>
+                                        </filter>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <rect width="800" height="450" rx="2" fill="#FFF" style="filter:url(#dropshadow-1)"/>
+                                        <rect width="800" height="450" rx="2" fill="#FFF"/>
+                                        <g>
+                                            <path fill="#DDE7EF" d="M0 32h800v1H0z"/>
+                                            <circle fill="url(#browser-a)" cx="24" cy="16" r="4"/>
+                                            <circle fill="url(#browser-b)" cx="40" cy="16" r="4"/>
+                                            <circle fill="url(#browser-c)" cx="56" cy="16" r="4"/>
+                                        </g>
+                                        <g filter="url(#browser-d)" transform="translate(505 196)" fill-rule="nonzero">
+                                            <path d="M100 100l100-50.426L103.193.762a7.087 7.087 0 0 0-6.393 0L0 49.574 100 100z" fill="url(#browser-e)"/>
+                                            <path d="M199 90L99 139.875v-40L199 50v40z" fill="url(#browser-f)"/>
+                                            <path d="M100 139.875L0 90V50l100 49.875v40z" fill="url(#browser-g)"/>
+                                        </g>
+                                        <g stroke-width="2">
+                                            <path stroke="url(#browser-h)" d="M498.336 298.7l-62.117 30.105L194 208" transform="translate(169 54)"/>
+                                            <path d="M511.219 127.805L269 7" stroke="url(#browser-i)" transform="translate(169 54)"/>
+                                            <path d="M312 157.547L533.512 43" stroke="url(#browser-j)" transform="translate(169 54)"/>
+                                            <path d="M222 114.547L443.512 0" stroke="url(#browser-k)" transform="translate(169 54)"/>
+                                            <path d="M0 356.547L221.512 242" stroke="url(#browser-l)" transform="translate(169 54)"/>
+                                            <path d="M215 319.266L312.031 268" stroke="url(#browser-j)" transform="translate(169 54)"/>
+                                        </g>
+                                        <g filter="url(#browser-m)" transform="scale(-1 1) rotate(45 -338.122 -406.594)" fill-rule="nonzero">
+                                            <path d="M52 0L.511 70.268a2.668 2.668 0 0 0-.478 1.987 2.63 2.63 0 0 0 1.076 1.732L52 110V0z" fill="url(#browser-e)"/>
+                                            <path d="M103.49 70.27L52 0v110l50.89-36.011a2.637 2.637 0 0 0 1.077-1.732 2.669 2.669 0 0 0-.476-1.987z" fill="url(#browser-n)"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="hero-ball hero-ball-3 is-revealing">
+                                <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient cx="56.15%" cy="27.43%" fx="56.15%" fy="27.43%" r="57.526%" gradientTransform="matrix(.5626 -.82673 .8022 .54591 .026 .589)" id="ball-3-a">
+                                            <stop stop-color="#F8F7FF" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="34.827%"/>
+                                            <stop stop-color="#9B95F3" offset="100%"/>
+                                        </radialGradient>
+                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-ball-3">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                            <feColorMatrix values="0 0 0 0 0.10 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.22 0" in="shadowBlurOuter"/>
+                                        </filter>
+                                    </defs>
+                                    <circle cx="40" cy="40" r="40" fill="#FFF" fill-rule="evenodd" style="filter:url(#dropshadow-ball-3)"/>
+                                    <circle cx="40" cy="40" r="40" fill="url(#ball-3-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="hero-ball hero-ball-4 is-revealing">
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient cx="56.15%" cy="27.43%" fx="56.15%" fy="27.43%" r="57.526%" gradientTransform="matrix(.5626 -.82673 .8022 .54591 .026 .589)" id="ball-4-a">
+                                            <stop stop-color="#F8F7FF" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="34.827%"/>
+                                            <stop stop-color="#9B95F3" offset="100%"/>
+                                        </radialGradient>
+                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-ball-4">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                            <feColorMatrix values="0 0 0 0 0.10 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.22 0" in="shadowBlurOuter"/>
+                                        </filter>
+                                    </defs>
+                                    <circle cx="20" cy="20" r="20" fill="#FFF" fill-rule="evenodd" style="filter:url(#dropshadow-ball-4)"/>
+                                    <circle cx="20" cy="20" r="20" fill="url(#ball-4-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="hero-ball hero-ball-5 is-revealing">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient cx="56.15%" cy="27.43%" fx="56.15%" fy="27.43%" r="57.526%" gradientTransform="matrix(.5626 -.82673 .8022 .54591 .026 .589)" id="ball-5-a">
+                                            <stop stop-color="#F8F7FF" offset="0%"/>
+                                            <stop stop-color="#DAD8FF" offset="34.827%"/>
+                                            <stop stop-color="#9B95F3" offset="100%"/>
+                                        </radialGradient>
+                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-ball-5">
+                                            <feOffset dx="24" dy="24" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                            <feColorMatrix values="0 0 0 0 0.10 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.22 0" in="shadowBlurOuter"/>
+                                        </filter>
+                                    </defs>
+                                    <circle cx="12" cy="12" r="12" fill="#FFF" fill-rule="evenodd" style="filter:url(#dropshadow-ball-5)"/>
+                                    <circle cx="12" cy="12" r="12" fill="url(#ball-5-a)" fill-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <nav>
-          <ul>
-			<li><a href="https://twitter.com/DMeechan1" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="https://www.instagram.com/danmeechan/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="https://linkedin.com/in/dmeechan" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/DMeechan" class="icon fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="mailto:daniel@meechan.co?subject=Hello&body=Hey Daniel," class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-          </ul>
-        </nav>
-      </header>
+        <footer class="site-footer text-light">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="https://juq.io/">juq</a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="mailto:daniel@meechan.co?subject=Let's talk&body=Hi Daniel,">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                                <a href="https://github.com/DMeechan">
+                                    <span class="screen-reader-text">GitHub</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="19" height="19"
+                                        viewBox="0 0 224 224"
+                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M105,14c-50.25782,0 -91,40.6875 -91,90.83593c0,40.14063 26.08593,74.21095 62.23438,86.2422c4.53905,0.8203 7.76562,-3.82813 7.76562,-7.32813c0,-2.13282 0.05468,-4.70312 0,-12.25c-25.32032,5.46875 -33.25,-12.25 -33.25,-12.25c-4.15625,-10.5 -9.1875,-13.50782 -9.1875,-13.50782c-8.25782,-5.6328 0.60157,-5.46875 0.60157,-5.46875c9.13282,0.60157 13.83593,8.47657 13.83593,8.47657c7,12.25 22.80468,11.04688 28,8.75c0,-5.57812 0.60157,-9.625 2.13282,-12.19532c-28.60157,-5.03125 -44.1875,-21.54687 -44.13282,-44.40625c0.05468,-13.5078 4.70313,-24.0078 12.25,-31.77343c-3.28125,-4.15625 -5.52343,-18.375 1.20313,-27.125c16.89843,0 26.96093,12.19532 26.96093,12.19532c0,0 7.92968,-3.44532 22.53125,-3.44532c14.65625,0 22.53125,3.28125 22.53125,3.28125c0,0 10.11718,-12.03125 27.01562,-12.03125c6.72657,8.75 4.48438,22.96875 1.85938,26.85157c7.21875,7.60157 11.64843,18.10157 11.64843,32.04687c0,22.85938 -15.53125,39.375 -44.07812,44.35157c1.80468,2.73438 2.07812,6.5625 2.07812,12.25c0,12.14063 0,23.24218 0,26.25c0,3.5 3.17188,8.20313 7.82032,7.32813c36.14843,-12.08595 62.17968,-46.10157 62.17968,-86.2422c0,-50.14843 -40.74218,-90.83593 -91,-90.83593z"></path></g></g></g>
+                                    </svg>
+                                </a>
+                            </li>
+                        <li>
+                            <a href="https://linkedin.com/in/dmeechan">
+                                <span class="screen-reader-text">LinkedIn</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="19" height="19"
+                                    viewBox="0 0 224 224"
+                                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"></path><g id="original-icon" fill="#ffffff"><path d="M183.68,17.92h-143.36c-12.3648,0 -22.4,10.0352 -22.4,22.4v143.36c0,12.3648 10.0352,22.4 22.4,22.4h143.36c12.3648,0 22.4,-10.0352 22.4,-22.4v-143.36c0,-12.3648 -10.0352,-22.4 -22.4,-22.4zM76.16,89.6v85.12h-26.88v-85.12zM49.28,64.8256c0,-6.272 5.376,-11.0656 13.44,-11.0656c8.064,0 13.1264,4.7936 13.44,11.0656c0,6.272 -5.0176,11.3344 -13.44,11.3344c-8.064,0 -13.44,-5.0624 -13.44,-11.3344zM174.72,174.72h-26.88c0,0 0,-41.4848 0,-44.8c0,-8.96 -4.48,-17.92 -15.68,-18.0992h-0.3584c-10.8416,0 -15.3216,9.2288 -15.3216,18.0992c0,4.0768 0,44.8 0,44.8h-26.88v-85.12h26.88v11.4688c0,0 8.6464,-11.4688 26.0288,-11.4688c17.7856,0 32.2112,12.2304 32.2112,37.0048z"></path></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/DMeechan1" style="margin-top: 2px;">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFFFFF"/>
+                                </svg>
+                            </a>
+                        </li>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <span class="copyright">&copy; Daniel Meechan | Design: <a href="https://html5up.net">HTML5 UP</a>.</span>
-      </footer>
-
+                    </ul>
+                    <div class="footer-copyright">&copy; Daniel Meechan 2019, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </div>
-  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  <script>
-    window.onload = function() {
-      document.body.className = '';
-    }
-    window.ontouchmove = function() {
-      return false;
-    }
-    window.onorientationchange = function() {
-      document.body.scrollTop = 0;
-    }
-  </script>
-</body>
 
+    <script src="dist/js/main.min.js"></script>
+</body>
 </html>
