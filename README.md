@@ -1,8 +1,9 @@
-# meechan.co (current)
+# dmeechan.com
 
-Static web page on [meechan.co](https://meechan.co)
+Static home page on [dmeechan.com](https://dmeechan.com)
 
-* [Getting started](#getting-started)
+- [dmeechan.com](#dmeechancom)
+  - [Getting started](#getting-started)
 
 ## Getting started
 
